@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C8CEE91C-C419-322B-903E-A6578729BFF0}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>minHeapTests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">minHeapTests.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">minHeapTests</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">minHeapTests.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">minHeapTests</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">minHeapTests.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">minHeapTests</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">minHeapTests.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">minHeapTests</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\Debug\gtest_maind.lib;..\Debug\minHeap.lib;..\lib\Debug\gtestd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/Debug/minHeapTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/Debug/minHeapTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\Release\gtest_main.lib;..\Release\minHeap.lib;..\lib\Release\gtest.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/Release/minHeapTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/Release/minHeapTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\MinSizeRel\gtest_main.lib;..\MinSizeRel\minHeap.lib;..\lib\MinSizeRel\gtest.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/MinSizeRel/minHeapTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/MinSizeRel/minHeapTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\include;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\RelWithDebInfo\gtest_main.lib;..\RelWithDebInfo\minHeap.lib;..\lib\RelWithDebInfo\gtest.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/RelWithDebInfo/minHeapTests.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/RelWithDebInfo/minHeapTests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-Hf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660" "-Bf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build" --check-stamp-file "F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-Hf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660" "-Bf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build" --check-stamp-file "F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-Hf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660" "-Bf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build" --check-stamp-file "F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" "-Hf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660" "-Bf:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build" --check-stamp-file "F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/build/test/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/test/CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\test\minHeapTests.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\ZERO_CHECK.vcxproj">
+      <Project>{6E2747B9-91EA-398F-8811-B2E1BF304E9D}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\googletest\googletest\gtest.vcxproj">
+      <Project>{81848D6C-CF92-35D5-A0FB-D4447C537DF5}</Project>
+      <Name>gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\googletest\googletest\gtest_main.vcxproj">
+      <Project>{A7EEC011-4AA6-32B1-B5A4-D57B84B0915E}</Project>
+      <Name>gtest_main</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\minHeap.vcxproj">
+      <Project>{27CCA959-8498-36D3-BD27-EFAAD3B61C96}</Project>
+      <Name>minHeap</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

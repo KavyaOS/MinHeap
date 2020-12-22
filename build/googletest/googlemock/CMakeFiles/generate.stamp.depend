@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/googletest/googlemock/CMakeLists.txt
+C:/Program Files (x86)/CMake/share/cmake-3.8/Modules/FindThreads.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.8/Modules/CheckLibraryExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.8/Modules/CheckSymbolExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/googletest/googlemock/cmake/gmock.pc.in
+F:/SDSU/Fall 2020/CS635/Assignment1/Assignment1_Kavya_Onkarappa_Sunanda_825893660/googletest/googlemock/cmake/gmock_main.pc.in

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googletest\src\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googlemock\src\gmock-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googlemock\src\gmock_main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\googletest\googlemock\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B3D2724B-5258-3B87-B7CD-A279B4B28200}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

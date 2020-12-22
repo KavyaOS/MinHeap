@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20200916-0317-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.8.1"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="DESKTOP-C1L9KG2"
+	OSRelease=" Professional"
+	OSVersion=" (Build 17134)"
+	OSPlatform="x86"
+	Is64Bits="0"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="13"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="0"
+	TotalVirtualMemory="10149"
+	TotalPhysicalMemory="4005"
+	LogicalProcessorsPerPhysical="16"
+	ProcessorClockFrequency="1994"
+	>
+	<Testing>
+		<StartDateTime>Sep 15 20:18 Pacific Daylight Time</StartDateTime>
+		<StartTestTime>1600226289</StartTestTime>
+		<TestList>
+			<Test>./test/minHeapTests</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>minHeapTests</Name>
+			<Path>./test</Path>
+			<FullName>./test/minHeapTests</FullName>
+			<FullCommandLine>"F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\Debug\minHeapTests.exe"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.316912</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>"F:\SDSU\Fall 2020\CS635\Assignment1\Assignment1_Kavya_Onkarappa_Sunanda_825893660\build\test\Debug\minHeapTests.exe"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLyC8uUfAvSkktSk1RKEvMKU1VyE9T8EhNLFDIy09JLbbiMjRXMDRSMFSwUDBW0DVU4OIKKErF1OGfkqLgV5qbBBaF6gSqBkJzoD4uAIJMHmo=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Sep 15 20:18 Pacific Daylight Time</EndDateTime>
+		<EndTestTime>1600226290</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
