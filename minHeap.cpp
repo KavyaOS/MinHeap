@@ -1,129 +1,105 @@
-#include <iostream> //Header file to perform input/output operations
-#include <algorithm> //Header file to use standard comparision methods
-#include "minHeap.hpp" //User defined header file for minHeap
+#include <iostream>
+#include "minHeap.hpp"
+#include<string>
 
 using namespace std;
 
-//TODO: initialization of default NULL value to the root
 TREE::TREE()
 {
     root=NULL;
 }
 
-//TODO: finding the depth of a subheap
-int NODE::findDepth(NODE *node)
+bool NODE::isNull()
 {
-    //if node is empty depth is returned as 0 else recursively find the depth of child node
-    if(node==NULL)
-        return 0;
-    else
-    {
-        int leftLength=findDepth(node->leftNode);
-        int rightLength=findDepth(node->rightNode);
-
-        return std::max(leftLength,rightLength)+1;
-    }
+    if(this==NULL)
+        return true;
+    return false;
 }
 
-//TODO: insertion of new values to the heap
-NODE* TREE::insert(int value,NODE* node)
+int NODE::findDepth(NODE *node)
 {
-    //When node is empty create a new node with the given value
-    if(node==NULL)
+    if(node->isNull())
+        return 0;
+    else
+        return max(findDepth(node->leftNode),findDepth(node->rightNode))+1;
+}
+
+NODE* NODE::insertToSubheapWithSmallestDepth(int value,NODE* node)
+{
+    if(node->isNull())
     {
         node=new NODE();
         node->value=value;
         node->leftNode=node->rightNode=NULL;
     }
-    //Attach the new node to left or right subheap with smallest depth
     else
     {
         int temp=value;
-
-        //When new value is lesser than the current node value, make new value the root value
         if(value<node->value)
         {
             temp=node->value;
             node->value=value;
         }
 
-        //recursively find the subheap with the smallest depth and attach the new node to it
         if(node->findDepth(node->leftNode)>node->findDepth(node->rightNode))
-            node->rightNode=insert(temp,node->rightNode);
+            node->rightNode=insertToSubheapWithSmallestDepth(temp,node->rightNode);
         else
-            node->leftNode=insert(temp,node->leftNode);
+            node->leftNode=insertToSubheapWithSmallestDepth(temp,node->leftNode);
     }
     return node;
 }
 
-//TODO: insertion of new values to the heap
 void TREE::insert(int value)
 {
-    root=insert(value,root);
+    root=root->insertToSubheapWithSmallestDepth(value,root);
 }
 
-//TODO: traversion and print the value of all the heap nodes in post order
-void TREE::traversePostOrderNodes(NODE *root)
+string NODE::traversePostOrderNodes(NODE *root,string str)
 {
-    if(root==NULL)
-        return;
+    if(root->isNull())
+        str.append("");
     else
     {
-        traversePostOrderNodes(root->leftNode);
-        traversePostOrderNodes(root->rightNode);
-
-        cout<<root->value<<" ";
+        str=traversePostOrderNodes(root->leftNode,str);
+        str=traversePostOrderNodes(root->rightNode,str);
+        str.append(to_string(root->value));
+        str.append(" ");
     }
+    return str;
 }
 
-//TODO: traversion and print the value of all of the nodes in post order
-void TREE::traversePostOrderNodes()
+string TREE::traversePostOrderNodes()
 {
-    cout<<"Post Ordered value of Heap nodes:"<<"\n";
-    traversePostOrderNodes(root);
+    string str;
+    return root->traversePostOrderNodes(this->root,str);
 }
 
-//TODO: printing of value of nodes having odd values in pre order
-void TREE::printOddNodesInPreOrder(NODE *root)
+string NODE::traverseOddNodesInPreOrder(NODE *root,string str)
 {
-    if(root==NULL)
-        return;
+    if(root->isNull())
+        str.append("");
     else
     {
         if((root->value%2)!=0)
-           cout<<root->value<<" ";
-
-        printOddNodesInPreOrder(root->leftNode);
-        printOddNodesInPreOrder(root->rightNode);
+        {
+            str.append(to_string(root->value));
+            str.append(" ");
+        }
+        str=traverseOddNodesInPreOrder(root->leftNode,str);
+        str=traverseOddNodesInPreOrder(root->rightNode,str);
     }
+    return str;
 }
 
-//TODO: printing of value of the nodes having odd values in pre order
-void TREE::printOddNodesInPreOrder()
+string TREE::traverseOddNodesInPreOrder()
 {
-    cout<<"\n\nPre Ordered value of Odd Numbered nodes:"<<"\n";
-    printOddNodesInPreOrder(root);
+    string str;
+    return root->traverseOddNodesInPreOrder(root,str);
 }
 
-//TODO: finding the depth of a heap
 int TREE::findDepth()
 {
     return root->findDepth(root);
-}
-
-//TODO: check whether the heap is empty
-bool TREE::isEmpty()
-{
-    if(root==NULL)
-        return true;
-    else
-        return false;            
-}
-
-//TODO: returning of root node
-NODE* TREE::getRoot()
-{
-    return root;
 }
 
 int main()
@@ -135,7 +111,9 @@ int main()
     minHeap.insert(17);
     minHeap.insert(8);
     minHeap.insert(-1);
-    minHeap.traversePostOrderNodes();
-    minHeap.printOddNodesInPreOrder();
+    cout<<"Post Ordered value of Heap nodes:"<<"\n";
+    cout<<minHeap.traversePostOrderNodes();
+    cout<<"\n\nPre Ordered value of Odd Numbered nodes:"<<"\n";
+    cout<<minHeap.traverseOddNodesInPreOrder();
     return 0;
 }
